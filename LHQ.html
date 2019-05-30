@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+	<title>Document</title>
+	<!-- css样式 -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="wow/animate.min.css">
+	<style>
+ p{
+ 	border-top: 1px solid blue;
+ }
+ /*导航条*/
+
+		
+ 
+    ul{
+    	list-style: none;
+    }
+  #l{
+  word-spacing:8px;
+letter-spacing: 10px;
+  }
+  #l2{
+  	border-top: 2px solid gray;
+  }
+
+.navbar	span{
+	background-color: black;
+	}
+	#nav1 {
+		position: absolute;
+
+		margin-top: 35px;
+		margin-left: 35%;
+		font-size: 20px;
+		
+	}
+	#nav1 ul li a::after{
+			/*content是必须的*/
+			content: '';
+			width: 13%;
+			height: 2px;
+			position: absolute;
+			top:50px;
+			display: block;
+			opacity: 0;
+			background:rgba(42,88,225,0.5);
+		}
+		#nav1 ul li a:hover::after{
+			top:41px;
+			opacity: 1;
+			transition:all .6s;
+		}
+	#nav1 li{
+		margin-left: 50px;
+		float: left;
+	}
+	#nav1 li a{
+		text-decoration: none;
+		color: black;
+	}
+  #nav1 ul #index{
+  	color: blue;
+  }
+  /*主体图片*/
+ .zl img{
+ 	width: 100%;
+ 	height: 610px;
+ 	margin-top: 90px;
+ }
+ .jq {
+ 	width: 100%;
+   margin: 90px 46%;
+ }
+ .jq h2{
+ 	font-size: 25px;
+
+ }
+ .jq h5{
+ 	font-size: 5px;  
+
+ }
+
+ .containera ul li{
+ 	float: left;
+ 	margin-left: 13%;
+ }
+
+ .containera {
+ 	width: 100%;
+ 	height: 200px;
+ 	/*border: 1px solid red;*/
+ 	position: absolute;
+ 	margin-left: 2%;
+
+ }
+ .containera h6{
+ 	margin-left: 15%;
+ }
+ .containera h4{
+ 	margin-top: 15px;
+ 	font-size: 23px;
+ 	
+ }
+
+ .containers{
+ 	width: 95%;
+ 	height: 200px;
+ 	/*border: 1px solid red;*/
+ 	margin-top: 100px;
+ 	margin-left:4%;
+ }
+ .containers ul li{
+ 	float: left;
+ 	margin-left: 20%;
+ }
+ /*优秀案例*/
+.ll{
+	width: 100%;
+     margin: 90px 46%;
+}
+.ll h2{
+	font-size: 25px;
+}
+.ll h5{
+	font-size: 5px;
+}
+/*金牌服务*/
+#qq{
+	width: 100%;
+	height: 1000px;
+	
+}
+.first{
+	background-color: #F5F5F5;
+	height: 350px;
+	margin-top: -50px;
+
+}
+.containerf{
+	margin-left: 10%;
+}
+.containerf  li{
+       float: left;
+       margin-left: 6%;
+      /* margin-top: -50px;*/
+}
+
+
+.containert{
+	/*border:1px solid red;*/
+	background-color: #F5F5F5;
+	margin-top: 730px;
+	height: 500px;
+}
+.gg{
+	/*margin-top: 500px;*/
+     margin: 150px 46%;
+}
+.gg h2{
+    font-size: 25px;
+}
+.gg h5{
+    font-size: 5px;
+   margin-left: 10%;
+}
+
+.containerd h2{
+	font-size: 25px;
+	 color: #1E90FF;
+      text-align: center;
+}
+
+.containerd h5{
+	margin-top: 20px;
+	margin-left: 23%;
+	color: #696969;
+}
+
+.zz img{
+    margin-left: 50%;
+    margin-top: -230px;
+}
+.js{
+	margin-left: 45%;
+	margin-top: 20px;
+}
+.js h2{
+	font-size: 25px;
+}
+.js h5{
+	font-size: 5px;
+	margin-left: 10px;
+}
+
+.n1{
+	border: 1px solid #696969;
+	/*opacity: 0.2;*/
+	width: 35%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 30px;
+}
+.n1 h2{
+	font-size: 25px;
+	 color: #1E90FF;
+}
+.n1 h5{
+	font-size:18px;
+	color: #696969;
+}
+.n2{
+   position: absolute;
+	width: 50%;
+	height: 500px;
+	float: left;
+    margin-top: 50px;
+   margin-left: 40%;
+}
+.n2 img{
+	width: 55%;
+	margin-left: 45%;
+}
+.yy{
+	height: 180px;
+	margin-left: 50%;
+	margin-top: -100px;
+}
+.jw{
+	
+     width: 100%;
+     height: 50px;
+   margin-left: 23%;
+
+
+}
+.jw li{
+	font-size: 20px;
+	margin-left: 70px;
+	float: left;
+    
+}
+
+.n{
+	width: 100%;
+	height: 600px;
+
+}
+.hh{
+	margin-top: 20px;
+	margin-left: 40%;
+	font-size: 25px; 
+	width: 100%;
+	height: 50px;
+}
+.xc{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #1C86EE;
+	background-color: #1C86EE;
+}
+.xc h3{ 
+	margin-left: 45%;
+    color: white;
+    letter-spacing: 3px;
+	word-spacing: 3px;
+	margin-top: 15px;
+}
+.xc h4{
+	margin-top: 20px;
+	letter-spacing: 8px;
+	word-spacing: 8px;
+	margin-left: 35%;
+	font-size: 15px;
+    color: white;
+
+}
+.footer{
+	width: 100%;
+	height: 100px;
+}
+.footer h5{
+	margin-top: 10px;
+	margin-left: 40%;
+
+}
+
+	</style>
+
+
+
+
+
+
+
+</head>
+<body>	
+<!-- 头部  导航条	 -->
+		<nav class="navbar  navbar-fixed-top">
+
+	      <div class="container-fluid">		
+			<div class="navbar-header" >		
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>		
+			</div>
+		     	<ul class="nav navbar-nav">
+					<li ><img style="margin-top: 30px;margin-left: 150px;" src="images/log.jpg"></li>
+					<li>
+				        <ul id="w" style="margin-top: 30px;
+		margin-left:-20px;">
+                            <li id="l">南宁文道有限公司</li>
+                            <li id="l2"></li>
+                            <li id="l3">Nangning WENDAO GO.Ltd</li>    
+					    </ul>
+					</ul>
+			<div class="collapse navbar-collapse" id="nav1">
+			
+					   <ul>
+		                 <li id="index"><a href="">我的首页</a></li>
+		                 <li><a href="">金牌服务</a></li>
+		                 <li><a href="">关于公司</a></li>
+		                 <li><a href="">优秀案例</a></li>
+		                 <li><a href="">联系我们</a></li>
+					   </ul>			   
+			</div>		
+		</nav>
+  <!-- 导航结束  -->
+  <!-- 主体图片 -->
+  <div class="zl">
+        <img src="images/zt.jpg">
+  </div>
+<!-- 主题图片 -->
+<!-- 金牌服务 开始-->
+<div id="qq">
+<div class="first">
+    <div class="jq">
+        <h2>金牌服务</h2>
+        <h5><a><u>GOLD SERVICE</u></a></h5>  
+    </div>
+   <!-- <div class="containera">-->
+    	
+        	<section class="container text-center png">
+		<div class="row">
+			<div class="wow bounceIn col-lg-3 col-md-4 col-sm-6 col-xs-6 " data-wow-duration="5s" data-wow-delay="3s">
+				<img src="images/1.png" alt="">
+				 <div class="h3">高端网站建设</div>
+				<div class="h5"><u>WEB</u></div>
+			</div>
+			<div class="wow bounceInLeft col-lg-3 col-md-4 col-sm-6 col-xs-6 " data-wow-duration="3s">
+				<img src="images/2.png" alt="">
+				 <div class="h3">移动端终端设计</div>
+				<div class="h5"><u>>MOBILE</u></div>
+			</div>
+			<div class="wow rollIn col-lg-3 col-md-4 col-sm-6 col-xs-6 " data-wow-duration="4s" data-wow-delay="5s">
+				<img src="images/3.png" alt="" >
+				 <div class="h3">IT人才培养服务</div>
+				<div class="h5"><u>PERSONNEL</u></div>
+			</div>
+			<div class="wow bounceInDown col-lg-3 col-md-4 col-sm-6 col-xs-6 " data-wow-duration="2s" data-wow-delay="4s">
+				<img src="images/4.png" alt="" >
+				 <div class="h3">企业信息化解决方案</div>
+				<div class="h5"><u>INFORMATION</u></div>
+			</div>
+		</div>
+	</section>      	
+<!-- 金牌服务 结束-->
+<!-- 优秀案例开始 -->
+<div class="second">
+	  <div class="ll">
+	       <h2>优秀案例</h2>
+	       <h5><a><u>EXECLLENT CASE</u></a></h5>
+	  </div>
+      <div class="containerf" >
+            <ul class="one" style="margin-top: -50px;">
+             <li><img src="images/5.png"><h4>From  saving  comes  having.</h4></li>
+             <li><img src="images/6.png"><h4>Small  gains  bring  great  wealth.</h4></li>
+             <li><img src="images/7.png"><h4>Many  a  little  makes  a  mickle.</h4></li>
+          </ul>
+           <ul>
+              <li><img src="images/8.png"><h4>No  way  is  impossible  to  courage.</h4></li>
+               <li style="margin-left: 85px;"><img src="images/9.png"><h4>Failure is the mother of success.</h4></li>
+               <li style="margin-left: 85px;"><img src="images/10.png"><h4>A lazy youth , a lousy age.</h4></li>
+           </ul>  
+      </div>
+ </div>
+ </div>
+<!-- 优秀案例结束 -->
+
+<!-- 关于我们开始 -->
+<div class="containert">
+	<div class="gg">
+       <h2>关于我们</h2>
+       <h5><a><u>ABOUT US</u></a></5>
+	</div>
+     <div class="containerd" style="margin-top: -100px;">
+         <ul>
+           <li><h2>为什么选择文道？</h2></li>
+           <li><h5>文道科技是一家提供互联网服务的高科技集团公司，集策划、设计、前端优化、研发、测试、系统运维、网站推广、运营、团</h5></li>
+           <li><h5>队外包及互联网人才培养为一体的成熟业务体系；</h5></li>
+         </ul>
+         <ul>
+            <li><h5>主要提供高品质网站建设方案，移动端应用开发方案，微应用、微商城、微官网、微互动营销解决方案，企业信息化解决方案 </h5></li>  
+            <li><h5>，以及PHP网站开发、JAVA开发、UI设计、淘宝美工人才培养服务，人才外包服务高端IT人才猎头服务。</h5></li> 
+         </ul>
+     </div>
+     
+</div>
+<!-- 关于我们结束 -->
+<!-- 椭圆 -->
+ <div class="zz">
+     <img src="images/ty2.png">
+ </div>
+<!-- 椭圆 -->
+<!-- 招聘开始 -->
+<div class="js">
+   <ul>
+      <li><h2><u>招聘信息</u></h2></li>
+      <li><a><h5>RERUITMENT</h5></a></li>
+   </ul>
+</div>
+<!-- 招聘结束 -->
+<div class="n">
+    <div class="n1">
+       <ul> 
+       	<li><h2>岗位职责</h2></li>
+       	<li><h5>1、服从公司的发展要求，配合公司的工作安排</h5></li>
+       	<li><h5>2、认真学习和全面了解公司的相关情况和工作细节</h5></li>
+       	<li><h5>3、负责公司基本项目开发</h5></li>
+       	<li><h5>4、参与公司所用技术的优化和升级</h5></li>
+       	<li><h2>任职要求</h2></li>
+       	<li><h5>1、对php有浓厚的兴趣，虚心学习。</h5></li>
+       	<li><h5>2、吃苦耐劳，有一定的自我约束和控制能力，具有团队精神</h5></li>
+       	<li><h5>3、具有较强表达能力和思维能力</h5></li>
+       </ul>        
+   </div>
+    <div class="n2">
+          <img src="images/dn.png">
+   </div>
+
+  </div>
+<!-- 椭圆 -->
+<div class="yy">
+    <img src="images/ty3.png">
+</div>
+<!-- 椭圆 -->
+<div class="hh">
+  <h4>首页 | 金牌服务 | 关于公司 | 优秀案例 | 联系我们</h4>
+	
+</div>
+<!-- 底部开始 -->
+<div class="xc">
+   <ul>       
+         <li><h3><i class="glyphicon glyphicon-map-marker"></i></h3></li
+          >
+          <li><h4>广西南宁市清秀民族大道泰安大厦22层</h4></li>
+             <li><h4 style="margin-left:38%;">TEL:400-899-7654</h4></li>
+   </ul>
+</div>
+<div class="footer">
+			 <ul>
+			  <li><h5>南宁文道科技有限公司</h5></li>
+			  <li><h5 style="margin-left:30%;">Copyright 2009-2015,All Rights Reserved wendo 粤ICP备12022584号-3</h5></li>
+          <li><h5 style="margin-left:38%;">法律顾问:广东晟晨律师事务所-张勇律师</h5></li>
+          </ul>
+
+</div>
+     
+<!-- 底部结束 -->
+	<script src="bootstrap/js/1.12.4-jq.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="swiper/swiper-3.4.2.min.js"></script>
+	<script src="wow/wow.min.js"></script>
+	<script>
+	 $(function () {
+	 	$("index").append("<span></span>")
+	 })
+	 new WOW().init();
+
+		$(window).scroll(function(){
+			if($(window).scrollTop()>400){
+				$(".navbar").css({background:"rgba(247, 233, 177, 0.54)"});
+			}else{
+				$(".navbar").css({background:"rgba(255,255,255,0.5)"});
+			}
+		});
+		
+	</script>
+</body>
+</html>
